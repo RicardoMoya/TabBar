@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rey-Wg-nd5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Hora - Reloj-->
+        <scene sceneID="9HW-4F-w2p">
+            <objects>
+                <viewController id="5II-hu-Sl1" customClass="Hora" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGc-Al-B45">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pantalla 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBF-1V-UVf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="PbQ-lp-NLi"/>
+                                    <constraint firstAttribute="height" constant="100" id="w7p-5D-tJ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OBF-1V-UVf" firstAttribute="top" secondItem="dGc-Al-B45" secondAttribute="top" constant="187" id="7UA-Lj-esn"/>
+                            <constraint firstAttribute="trailing" secondItem="OBF-1V-UVf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ecR-Ut-Q6i"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reloj" image="reloj.png" id="pLn-5x-hXn"/>
+                    <connections>
+                        <outlet property="lbHora" destination="OBF-1V-UVf" id="n6M-JM-uag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVB-rp-l4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="224"/>
+        </scene>
+        <!--Fecha - Fecha-->
+        <scene sceneID="b1q-rC-uD9">
+            <objects>
+                <viewController id="Tib-hj-Dqa" customClass="Fecha" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KdG-BK-ggP">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynq-9l-nKZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="j3r-Yr-jW8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ynq-9l-nKZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QNh-Zp-REX"/>
+                            <constraint firstItem="ynq-9l-nKZ" firstAttribute="top" secondItem="KdG-BK-ggP" secondAttribute="top" constant="141" id="bB0-3e-SH3"/>
+                            <constraint firstItem="ynq-9l-nKZ" firstAttribute="leading" secondItem="KdG-BK-ggP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wk6-Ke-NNH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fecha" image="Calendario.png" id="xRd-nZ-gYj"/>
+                    <connections>
+                        <outlet property="lbFecha" destination="ynq-9l-nKZ" id="X7Z-Nb-p90"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzb-Pa-d3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-341"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fCq-mX-I3a">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="rey-Wg-nd5" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fDz-XU-5Hj">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tib-hj-Dqa" kind="relationship" relationship="viewControllers" id="lX9-ZK-vDr"/>
+                        <segue destination="5II-hu-Sl1" kind="relationship" relationship="viewControllers" id="Uel-BK-fJU"/>
+                        <segue destination="fIN-mg-xlP" kind="relationship" relationship="viewControllers" id="Zrp-da-Pb9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsu-BK-Qv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="-58"/>
+        </scene>
+        <!--Cronometro - Cronometro-->
+        <scene sceneID="OBX-wo-ufl">
+            <objects>
+                <viewController id="fIN-mg-xlP" customClass="Cronometro" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YFt-WK-g4X">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nOa-8f-Y82">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Gw5-h4-K6O"/>
+                                    <constraint firstAttribute="width" constant="280" id="SQv-re-4FD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="v9g-Zd-9tW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="dxX-zZ-tij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlO-Nt-Hbn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="XWN-xP-zME"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btStart:" destination="fIN-mg-xlP" eventType="touchUpInside" id="K5g-JU-eA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORE-gk-wPC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="rSm-lq-AMC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btStop:" destination="fIN-mg-xlP" eventType="touchUpInside" id="nro-Wa-aaZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-5A-EME">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Mhg-qX-3iz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Reiniciar">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btReiniciar:" destination="fIN-mg-xlP" eventType="touchUpInside" id="oRL-TQ-WjJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nOa-8f-Y82" firstAttribute="leading" secondItem="YFt-WK-g4X" secondAttribute="leading" constant="18" id="1Vf-TS-CsG"/>
+                            <constraint firstAttribute="bottom" secondItem="ICX-5A-EME" secondAttribute="bottom" constant="14" id="Jza-jy-kLM"/>
+                            <constraint firstItem="wlO-Nt-Hbn" firstAttribute="trailing" secondItem="v9g-Zd-9tW" secondAttribute="trailing" type="default" id="UT1-iy-X2T"/>
+                            <constraint firstItem="v9g-Zd-9tW" firstAttribute="top" secondItem="YFt-WK-g4X" secondAttribute="top" constant="155" id="Y4O-Ms-rnT"/>
+                            <constraint firstItem="wlO-Nt-Hbn" firstAttribute="leading" secondItem="ORE-gk-wPC" secondAttribute="leading" type="default" id="YyO-HY-JJK"/>
+                            <constraint firstItem="nOa-8f-Y82" firstAttribute="trailing" secondItem="v9g-Zd-9tW" secondAttribute="trailing" type="default" id="a0U-Dv-wXX"/>
+                            <constraint firstItem="wlO-Nt-Hbn" firstAttribute="trailing" secondItem="ORE-gk-wPC" secondAttribute="trailing" type="default" id="g8K-jj-AFd"/>
+                            <constraint firstItem="v9g-Zd-9tW" firstAttribute="leading" secondItem="wlO-Nt-Hbn" secondAttribute="leading" type="default" id="hIR-OT-0sd"/>
+                            <constraint firstItem="nOa-8f-Y82" firstAttribute="top" secondItem="YFt-WK-g4X" secondAttribute="top" constant="12" id="jPa-du-Tg5"/>
+                            <constraint firstItem="nOa-8f-Y82" firstAttribute="leading" secondItem="v9g-Zd-9tW" secondAttribute="leading" type="default" id="lzZ-Y0-bAa"/>
+                            <constraint firstAttribute="bottom" secondItem="ORE-gk-wPC" secondAttribute="bottom" constant="79" id="or6-q4-GGq"/>
+                            <constraint firstItem="ICX-5A-EME" firstAttribute="trailing" secondItem="ORE-gk-wPC" secondAttribute="trailing" type="default" id="qbI-Pf-j3T"/>
+                            <constraint firstItem="ORE-gk-wPC" firstAttribute="leading" secondItem="ICX-5A-EME" secondAttribute="leading" type="default" id="sdY-jm-eEB"/>
+                            <constraint firstAttribute="bottom" secondItem="wlO-Nt-Hbn" secondAttribute="bottom" constant="146" id="xew-gF-7ZP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cronometro" image="cronometro.png" id="Zzz-AI-7my"/>
+                    <connections>
+                        <outlet property="lbContador" destination="nOa-8f-Y82" id="25a-mW-dzZ"/>
+                        <outlet property="lbEstado" destination="v9g-Zd-9tW" id="nc3-cj-Mlc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGy-RJ-yqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calendario.png" width="30" height="30"/>
+        <image name="cronometro.png" width="30" height="30"/>
+        <image name="reloj.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="Cronometro" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Cronometro.h"/>
+            <relationships>
+                <relationship kind="action" name="btReiniciar:"/>
+                <relationship kind="action" name="btStart:"/>
+                <relationship kind="action" name="btStop:"/>
+                <relationship kind="outlet" name="lbContador" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lbEstado" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Fecha" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Fecha.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lbFecha" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Hora" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Hora.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lbHora" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

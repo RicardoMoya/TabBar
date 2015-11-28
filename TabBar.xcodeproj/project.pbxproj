@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79AE142D17D23909004CEB29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE142C17D23909004CEB29 /* UIKit.framework */; };
+		79AE142F17D23909004CEB29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE142E17D23909004CEB29 /* Foundation.framework */; };
+		79AE143117D23909004CEB29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE143017D23909004CEB29 /* CoreGraphics.framework */; };
+		79AE143717D23909004CEB29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79AE143517D23909004CEB29 /* InfoPlist.strings */; };
+		79AE143917D23909004CEB29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE143817D23909004CEB29 /* main.m */; };
+		79AE143D17D23909004CEB29 /* RichardAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE143C17D23909004CEB29 /* RichardAppDelegate.m */; };
+		79AE143F17D23909004CEB29 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE143E17D23909004CEB29 /* Default.png */; };
+		79AE144117D23909004CEB29 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE144017D23909004CEB29 /* Default@2x.png */; };
+		79AE144317D23909004CEB29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE144217D23909004CEB29 /* Default-568h@2x.png */; };
+		79AE144617D23909004CEB29 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AE144417D23909004CEB29 /* MainStoryboard.storyboard */; };
+		79AE144917D23909004CEB29 /* RichardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE144817D23909004CEB29 /* RichardViewController.m */; };
+		79AE145217D23ADF004CEB29 /* Calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE144F17D23ADF004CEB29 /* Calendario.png */; };
+		79AE145317D23ADF004CEB29 /* cronometro.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE145017D23ADF004CEB29 /* cronometro.png */; };
+		79AE145417D23ADF004CEB29 /* reloj.png in Resources */ = {isa = PBXBuildFile; fileRef = 79AE145117D23ADF004CEB29 /* reloj.png */; };
+		79AE145717D23BD1004CEB29 /* Fecha.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE145617D23BD1004CEB29 /* Fecha.m */; };
+		79AE145A17D23C7E004CEB29 /* Hora.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE145917D23C7E004CEB29 /* Hora.m */; };
+		79AE145D17D23C8F004CEB29 /* Cronometro.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE145C17D23C8F004CEB29 /* Cronometro.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79AE142917D23909004CEB29 /* TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AE142C17D23909004CEB29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79AE142E17D23909004CEB29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79AE143017D23909004CEB29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79AE143417D23909004CEB29 /* TabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBar-Info.plist"; sourceTree = "<group>"; };
+		79AE143617D23909004CEB29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79AE143817D23909004CEB29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79AE143A17D23909004CEB29 /* TabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBar-Prefix.pch"; sourceTree = "<group>"; };
+		79AE143B17D23909004CEB29 /* RichardAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichardAppDelegate.h; sourceTree = "<group>"; };
+		79AE143C17D23909004CEB29 /* RichardAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichardAppDelegate.m; sourceTree = "<group>"; };
+		79AE143E17D23909004CEB29 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		79AE144017D23909004CEB29 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79AE144217D23909004CEB29 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79AE144517D23909004CEB29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		79AE144717D23909004CEB29 /* RichardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichardViewController.h; sourceTree = "<group>"; };
+		79AE144817D23909004CEB29 /* RichardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichardViewController.m; sourceTree = "<group>"; };
+		79AE144F17D23ADF004CEB29 /* Calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendario.png; sourceTree = "<group>"; };
+		79AE145017D23ADF004CEB29 /* cronometro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cronometro.png; sourceTree = "<group>"; };
+		79AE145117D23ADF004CEB29 /* reloj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reloj.png; sourceTree = "<group>"; };
+		79AE145517D23BD1004CEB29 /* Fecha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fecha.h; sourceTree = "<group>"; };
+		79AE145617D23BD1004CEB29 /* Fecha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fecha.m; sourceTree = "<group>"; };
+		79AE145817D23C7E004CEB29 /* Hora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hora.h; sourceTree = "<group>"; };
+		79AE145917D23C7E004CEB29 /* Hora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hora.m; sourceTree = "<group>"; };
+		79AE145B17D23C8F004CEB29 /* Cronometro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cronometro.h; sourceTree = "<group>"; };
+		79AE145C17D23C8F004CEB29 /* Cronometro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cronometro.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79AE142617D23909004CEB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AE142D17D23909004CEB29 /* UIKit.framework in Frameworks */,
+				79AE142F17D23909004CEB29 /* Foundation.framework in Frameworks */,
+				79AE143117D23909004CEB29 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79AE142017D23909004CEB29 = {
+			isa = PBXGroup;
+			children = (
+				79AE143217D23909004CEB29 /* TabBar */,
+				79AE142B17D23909004CEB29 /* Frameworks */,
+				79AE142A17D23909004CEB29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79AE142A17D23909004CEB29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79AE142917D23909004CEB29 /* TabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79AE142B17D23909004CEB29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79AE142C17D23909004CEB29 /* UIKit.framework */,
+				79AE142E17D23909004CEB29 /* Foundation.framework */,
+				79AE143017D23909004CEB29 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79AE143217D23909004CEB29 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				79AE145B17D23C8F004CEB29 /* Cronometro.h */,
+				79AE145C17D23C8F004CEB29 /* Cronometro.m */,
+				79AE145817D23C7E004CEB29 /* Hora.h */,
+				79AE145917D23C7E004CEB29 /* Hora.m */,
+				79AE145517D23BD1004CEB29 /* Fecha.h */,
+				79AE145617D23BD1004CEB29 /* Fecha.m */,
+				79AE144417D23909004CEB29 /* MainStoryboard.storyboard */,
+				79AE144717D23909004CEB29 /* RichardViewController.h */,
+				79AE144817D23909004CEB29 /* RichardViewController.m */,
+				79AE143317D23909004CEB29 /* Supporting Files */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		79AE143317D23909004CEB29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79AE144F17D23ADF004CEB29 /* Calendario.png */,
+				79AE145017D23ADF004CEB29 /* cronometro.png */,
+				79AE145117D23ADF004CEB29 /* reloj.png */,
+				79AE143B17D23909004CEB29 /* RichardAppDelegate.h */,
+				79AE143C17D23909004CEB29 /* RichardAppDelegate.m */,
+				79AE143417D23909004CEB29 /* TabBar-Info.plist */,
+				79AE143517D23909004CEB29 /* InfoPlist.strings */,
+				79AE143817D23909004CEB29 /* main.m */,
+				79AE143A17D23909004CEB29 /* TabBar-Prefix.pch */,
+				79AE143E17D23909004CEB29 /* Default.png */,
+				79AE144017D23909004CEB29 /* Default@2x.png */,
+				79AE144217D23909004CEB29 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79AE142817D23909004CEB29 /* TabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79AE144C17D23909004CEB29 /* Build configuration list for PBXNativeTarget "TabBar" */;
+			buildPhases = (
+				79AE142517D23909004CEB29 /* Sources */,
+				79AE142617D23909004CEB29 /* Frameworks */,
+				79AE142717D23909004CEB29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBar;
+			productName = TabBar;
+			productReference = 79AE142917D23909004CEB29 /* TabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79AE142117D23909004CEB29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Richard;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ricardo Moya Garcia";
+			};
+			buildConfigurationList = 79AE142417D23909004CEB29 /* Build configuration list for PBXProject "TabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79AE142017D23909004CEB29;
+			productRefGroup = 79AE142A17D23909004CEB29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79AE142817D23909004CEB29 /* TabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79AE142717D23909004CEB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AE143717D23909004CEB29 /* InfoPlist.strings in Resources */,
+				79AE143F17D23909004CEB29 /* Default.png in Resources */,
+				79AE144117D23909004CEB29 /* Default@2x.png in Resources */,
+				79AE144317D23909004CEB29 /* Default-568h@2x.png in Resources */,
+				79AE144617D23909004CEB29 /* MainStoryboard.storyboard in Resources */,
+				79AE145217D23ADF004CEB29 /* Calendario.png in Resources */,
+				79AE145317D23ADF004CEB29 /* cronometro.png in Resources */,
+				79AE145417D23ADF004CEB29 /* reloj.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79AE142517D23909004CEB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AE143917D23909004CEB29 /* main.m in Sources */,
+				79AE143D17D23909004CEB29 /* RichardAppDelegate.m in Sources */,
+				79AE144917D23909004CEB29 /* RichardViewController.m in Sources */,
+				79AE145717D23BD1004CEB29 /* Fecha.m in Sources */,
+				79AE145A17D23C7E004CEB29 /* Hora.m in Sources */,
+				79AE145D17D23C8F004CEB29 /* Cronometro.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79AE143517D23909004CEB29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79AE143617D23909004CEB29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79AE144417D23909004CEB29 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79AE144517D23909004CEB29 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79AE144A17D23909004CEB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79AE144B17D23909004CEB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79AE144D17D23909004CEB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBar/TabBar-Prefix.pch";
+				INFOPLIST_FILE = "TabBar/TabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79AE144E17D23909004CEB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabBar/TabBar-Prefix.pch";
+				INFOPLIST_FILE = "TabBar/TabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79AE142417D23909004CEB29 /* Build configuration list for PBXProject "TabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79AE144A17D23909004CEB29 /* Debug */,
+				79AE144B17D23909004CEB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79AE144C17D23909004CEB29 /* Build configuration list for PBXNativeTarget "TabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79AE144D17D23909004CEB29 /* Debug */,
+				79AE144E17D23909004CEB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79AE142117D23909004CEB29 /* Project object */;
+}
